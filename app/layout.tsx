@@ -1,6 +1,7 @@
 import { Navbar } from "../components/Navbar";
 import Head from "next/head";
 import "../styles/globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -11,6 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <meta property="og:title" content="Site" key="title" />
+        <GoogleAnalytics gaId="G-WTW0D38B14"/>
       </Head>
       <body>
         <Navbar />
