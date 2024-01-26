@@ -1,7 +1,11 @@
 import React from "react";
+import Main from "../../components/Main";
 
 const Recordings = () => {
-  return <div>Recordings</div>;
+  return (
+    <Main title="Recordings">
+    </Main>
+  )
 };
 
 export default Recordings;

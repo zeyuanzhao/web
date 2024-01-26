@@ -3,8 +3,8 @@ export default function Main(
     title,
     children 
   }: { 
-    title: string; 
-    children: React.ReactNode 
+    title?: string; 
+    children?: React.ReactNode 
   }) {
   return (
     <main className="mt-10 mx-16">
