@@ -5,13 +5,14 @@ import linkedinLight from "../../public/linkedin-light.svg";
 import linkedinDark from "../../public/linkedin-dark.svg";
 import Link from "next/link";
 import { Socials } from "../Socials";
+import { Courier_Prime } from 'next/font/google';
 
 export const Navbar = () => {
   return (
     <nav>
-      <div className="py-4 align-middle">
+      <div className="py-4 align-middle font-courier">
         <h1 className="inline-block text-3xl font-bold ml-8 align-middle">
-          <Link href="/">Alex Zhao</Link>
+          <Link href="/">&gt; Alex Zhao</Link>
         </h1>
         <ul className="inline-block list-none text-2xl ml-8 align-middle">
           <li className="inline-block mx-8">
