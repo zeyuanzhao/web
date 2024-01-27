@@ -1,7 +1,10 @@
 import Image from "next/image";
-import githubLogoDark from "../../public/github-mark-white.svg";
-import githubLogoLight from "../../public/github-mark.svg";
+import githubLogoDark from "../../public/github-dark.svg";
+import githubLogoLight from "../../public/github-light.svg";
+import linkedinLight from "../../public/linkedin-light.svg";
+import linkedinDark from "../../public/linkedin-dark.svg";
 import Link from "next/link";
+import { Socials } from "../Socials";
 
 export const Navbar = () => {
   return (
@@ -32,17 +35,22 @@ export const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <ul className="inline-block list-none align-middle float-right mr-8">
-          <li className="none dark:block">
-            <Link href="https://github.com/zeyuanzhao" target="_blank">
-              <picture>
-                <source
-                  srcSet={githubLogoDark.src}
-                  media="(prefers-color-scheme: dark)"
-                />
-                <Image src={githubLogoLight} width="35" alt="GitHub" />
-              </picture>
-            </Link>
+        <ul className="inline-block list-none align-middle float-right mr-4">
+          <li className="inline-block ml-3">
+            <Socials
+              logoLight={githubLogoLight}
+              logoDark={githubLogoDark}
+              logoAlt={"GitHub"}
+              logoLink={"https://github.com/zeyuanzhao/"}
+            ></Socials>
+          </li>
+          <li className="inline-block ml-3">
+            <Socials
+              logoLight={linkedinLight}
+              logoDark={linkedinDark}
+              logoAlt={"LinkedIn"}
+              logoLink={"https://www.linkedin.com/in/zazhao/"}
+            ></Socials>
           </li>
         </ul>
       </div>
