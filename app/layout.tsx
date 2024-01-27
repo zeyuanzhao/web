@@ -3,6 +3,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function RootLayout({
   children,
