@@ -7,8 +7,8 @@ export const Socials = ({
   logoAlt,
   logoLink,
 }: {
-  logoLight: SVGElement & HTMLImageElement;
-  logoDark: SVGElement & HTMLImageElement;
+  logoLight: HTMLImageElement;
+  logoDark: HTMLImageElement;
   logoAlt: string;
   logoLink: string;
 }) => {
@@ -23,3 +23,5 @@ export const Socials = ({
     </div>
   );
 };
+
+export default Socials;

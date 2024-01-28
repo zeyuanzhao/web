@@ -6,11 +6,11 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import favicon from "../public/favicon/favicon.ico"
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) => {
   return (
     <html lang="en">
       <head>
@@ -26,4 +26,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="bg-slate-100 dark:bg-gray-800 border-t border-black-300 dark:border-gray-500 fixed bottom-0 left-0 w-full p-4 font-courier">
       <p className="inline-block ml-1">Copyright © 2024 Alex Zhao</p>
@@ -9,3 +9,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
