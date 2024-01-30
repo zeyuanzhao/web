@@ -1,6 +1,6 @@
 import Main from "../components/Main";
 
-export default function Home() {
+const Home = () => {
   return (
     <Main title="Home">
       <img src="" alt="" />
@@ -16,4 +16,6 @@ export default function Home() {
       </p>
     </Main>
   );
-}
+};
+
+export default Home;

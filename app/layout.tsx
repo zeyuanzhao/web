@@ -4,17 +4,20 @@ import "../styles/globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from "../components/Footer";
 import Link from "next/link";
+import favicon from "../public/favicon/favicon.ico"
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: {
   children: React.ReactNode;
-}) {
+}) => {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta property="og:title" content="Site" key="title" />
-      </Head>
+        <title>Alex Zhao</title>
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
+      </head>
       <body>
         <Navbar />
         {children}
@@ -23,4 +26,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

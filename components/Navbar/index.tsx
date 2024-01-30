@@ -55,7 +55,9 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
-      <hr />
+      <hr className="dark:border-gray-500"/>
     </nav>
   );
 };
+
+export default Navbar;
