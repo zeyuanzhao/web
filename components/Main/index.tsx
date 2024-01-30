@@ -7,7 +7,7 @@ const Main = ({
 }) => {
   return (
     <main className="mt-10 mx-16 mb-20">
-      <h1 className="text-5xl mb-4">{title}</h1>
+      <h1 className="text-5xl mb-8">{title}</h1>
       {children}
     </main>
   );

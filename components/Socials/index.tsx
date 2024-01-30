@@ -13,7 +13,7 @@ export const Socials = ({
   logoLink: string;
 }) => {
   return (
-    <div className="focus:ring-4 hover:ring-4 ring-slate-300 dark:ring-slate-600 rounded-full">
+    <div className="focus:ring-4 hover:ring-4 ring-slate-300 dark:ring-slate-600 rounded-full m-auto">
       <Link href={logoLink} target="_blank" className="">
         <picture>
           <source srcSet={logoDark.src} media="(prefers-color-scheme: dark)" />
