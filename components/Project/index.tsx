@@ -26,7 +26,7 @@ export const Project = ({
         <Image
           src={image}
           alt={imageAlt}
-          className="m-auto h-full w-full object-cover"
+          className="m-auto h-full w-full object-cover scale-100 hover:scale-105 ease-in duration-500"
         ></Image>
       </div>
       <div className="px-6 pb-6 pt-6 flex flex-col flex-1">

@@ -17,7 +17,7 @@ export const Socials = ({
       <Link href={logoLink} target="_blank" className="">
         <picture>
           <source srcSet={logoDark.src} media="(prefers-color-scheme: dark)" />
-          <Image src={logoLight} width="35" alt={logoAlt} />
+          <Image src={logoLight} width="35" alt={logoAlt} className="scale-100 hover:scale-110 ease-in duration-250" />
         </picture>
       </Link>
     </div>
