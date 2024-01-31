@@ -21,12 +21,12 @@ export const Project = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div className="bg-cyan-50 rounded-2xl basis-1/3 shadow-lg flex flex-col">
+    <div className="bg-cyan-50 dark:bg-gray-800 rounded-2xl w-full shadow-lg flex flex-col">
       <div className="h-60 object-cover rounded-t-2xl rounded-b-md overflow-hidden">
         <Image
           src={image}
           alt={imageAlt}
-          className="m-auto h-full w-full object-cover"
+          className="m-auto h-full w-full object-cover scale-100 hover:scale-105 ease-in duration-500"
         ></Image>
       </div>
       <div className="px-6 pb-6 pt-6 flex flex-col flex-1">
@@ -41,7 +41,7 @@ export const Project = ({
               {buttonText}
             </button>
           </Link>
-          <div className="float-right">{children}</div>
+          <div className="float-right flex justify-between items-center space-x-2">{children}</div>
         </div>
       </div>
     </div>

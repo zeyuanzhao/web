@@ -29,6 +29,12 @@ const Projects = () => {
             logoAlt={"GitHub Repository"}
             logoLink={"https://github.com/zeyuanzhao/web"}
           />
+          <Socials
+            logoLight={githubLogoLight}
+            logoDark={githubLogoDark}
+            logoAlt={"GitHub Repository"}
+            logoLink={"https://github.com/zeyuanzhao/web"}
+          />
         </Project>
         <Project
           name="Website"
