@@ -2,6 +2,11 @@
 
 import Script from "next/script";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Sun from "../../public/sun.svg";
+import Moon from "../../public/moon.svg";
+import Socials from "../Socials";
+
 
 const ThemeSwitch = () => {
   let savedTheme = localStorage.getItem("theme");
@@ -37,7 +42,9 @@ const ThemeSwitch = () => {
   };
 
   return <>
-    <button className="align-middle inline-block" onClick={handleThemeSwitch}>Switch Theme</button>
+    <button className="align-middle" onClick={handleThemeSwitch}>
+      <Socials logoLight={Sun} logoDark={Moon} logoAlt={"Switch Theme"} logoLink={""} newTab={false}></Socials>
+    </button>
   </>
 }
 

@@ -54,9 +54,11 @@ export const Navbar = () => {
               logoLink={"https://www.linkedin.com/in/zazhao/"}
             ></Socials>
           </li>
+          <li className="inline-block ml-3">
+            <ThemeSwitch />
+          </li>
         </ul>
       </div>
-      <ThemeSwitch />
       <hr className="dark:border-gray-500"/>
     </nav>
   );
