@@ -6,6 +6,7 @@ import linkedinDark from "../../public/linkedin-dark.svg";
 import Link from "next/link";
 import { Socials } from "../Socials";
 import { Courier_Prime } from 'next/font/google';
+import ThemeSwitch from "../ThemeSwitch";
 
 export const Navbar = () => {
   return (
@@ -55,6 +56,7 @@ export const Navbar = () => {
           </li>
         </ul>
       </div>
+      <ThemeSwitch />
       <hr className="dark:border-gray-500"/>
     </nav>
   );
