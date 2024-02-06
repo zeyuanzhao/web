@@ -42,13 +42,16 @@ const ThemeSwitch = () => {
         document.documentElement.setAttribute("data-theme", "light");
       }
     };
-  }
+  
 
   return <>
     <button className="align-middle" onClick={handleThemeSwitch}>
       <Socials logoLight={Sun} logoDark={Moon} logoAlt={"Switch Theme"} logoLink={""} newTab={false}></Socials>
     </button>
   </>
+  }
+
+  return <>Not Loaded</>
 }
 
 export default ThemeSwitch;
