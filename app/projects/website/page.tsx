@@ -5,9 +5,9 @@ import WebsiteBanner from "../../../public/nextjs-banner.png"
 const Website = () => {
   return (
     <ProjectPage title="Website" urltitle="website">
-      <div className="flex">
+      <div className="flex mb-4">
         <p className="basis-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus in. Libero enim sed faucibus turpis in eu mi. Sed egestas egestas fringilla phasellus faucibus. Mauris cursus mattis molestie a. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Velit dignissim sodales ut eu sem integer. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Sagittis id consectetur purus ut faucibus. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed risus ultricies tristique nulla aliquet enim. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.</p>
-        <div className="basis-1/3 rounded-lg shadow-2xl overflow-hidden">
+        <div className="ml-4 basis-1/3 rounded-lg shadow-2xl overflow-hidden">
           <Image src={WebsiteBanner} alt={""} className="object-cover" />
         </div>
       </div>
