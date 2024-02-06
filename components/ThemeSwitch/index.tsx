@@ -9,7 +9,7 @@ import Socials from "../Socials";
 
 
 const ThemeSwitch = () => {
-  if (localStorage != undefined) {
+  if (typeof window !== "undefined") {
     let savedTheme = localStorage.getItem("theme");
     if (savedTheme == null) {
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
