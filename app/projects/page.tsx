@@ -7,6 +7,8 @@ import Image from "next/image";
 import Socials from "../../components/Socials";
 import githubLogoDark from "../../public/github-dark.svg";
 import githubLogoLight from "../../public/github-light.svg";
+import webLogoDark from "../../public/web-dark.svg";
+import webLogoLight from "../../public/web-light.svg";
 
 const Projects = () => {
   return (
@@ -20,8 +22,8 @@ const Projects = () => {
           }
           image={WebsiteBanner}
           imageAlt={"Next.js banner"}
-          link={"/"}
-          buttonText="Visit"
+          link={"/projects/website"}
+          buttonText="Learn More"
         >
           <Socials
             logoLight={githubLogoLight}
@@ -30,79 +32,34 @@ const Projects = () => {
             logoLink={"https://github.com/zeyuanzhao/web"}
           />
           <Socials
-            logoLight={githubLogoLight}
-            logoDark={githubLogoDark}
-            logoAlt={"GitHub Repository"}
-            logoLink={"https://github.com/zeyuanzhao/web"}
+            logoLight={webLogoLight}
+            logoDark={webLogoDark}
+            logoAlt={"Visit Website"}
+            logoLink={"/"}
+            width={50}
+            height={50}
+            newTab={false}
           />
         </Project>
         <Project
-          name="Website"
+          name="Tuttio"
           description={
-            "Interesting description sentence goes here"
+            "I am the founder and president of Tuttio, a nonprofit organization that hosts community concerts and provides free music tutoring. Learn more about Tuttio below!"
           }
           image={SquarespaceBanner}
           imageAlt={"Squarespace banner"}
           // imageWidth={400}
           link={""}
-          buttonText="Visit"
+          buttonText="Learn More"
         >
           <Socials
-            logoLight={githubLogoLight}
-            logoDark={githubLogoDark}
-            logoAlt={"GitHub Repository"}
-            logoLink={"https://github.com/zeyuanzhao/web"}
-          />
-        </Project>
-        <Project
-          name="Website"
-          description={
-            "I built a website with Next.js!! "
-          }
-          image={WebsiteBanner}
-          imageAlt={"Next.js banner"}
-          link={"/"}
-          buttonText="Visit"
-        >
-          <Socials
-            logoLight={githubLogoLight}
-            logoDark={githubLogoDark}
-            logoAlt={"GitHub Repository"}
-            logoLink={"https://github.com/zeyuanzhao/web"}
-          />
-        </Project>
-        <Project
-          name="Website"
-          description={
-            "I built a website with Next.js!! "
-          }
-          image={WebsiteBanner}
-          imageAlt={"Next.js banner"}
-          link={"/"}
-          buttonText="Visit"
-        >
-          <Socials
-            logoLight={githubLogoLight}
-            logoDark={githubLogoDark}
-            logoAlt={"GitHub Repository"}
-            logoLink={"https://github.com/zeyuanzhao/web"}
-          />
-        </Project>
-        <Project
-          name="Website"
-          description={
-            "I built a website with Next.js!! "
-          }
-          image={WebsiteBanner}
-          imageAlt={"Next.js banner"}
-          link={"/"}
-          buttonText="Visit"
-        >
-          <Socials
-            logoLight={githubLogoLight}
-            logoDark={githubLogoDark}
-            logoAlt={"GitHub Repository"}
-            logoLink={"https://github.com/zeyuanzhao/web"}
+            logoLight={webLogoLight}
+            logoDark={webLogoDark}
+            logoAlt={"Visit Website"}
+            logoLink={"#"}
+            width={50}
+            height={50}
+            newTab={false}
           />
         </Project>
       </div>

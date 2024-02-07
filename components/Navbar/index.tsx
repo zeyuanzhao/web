@@ -6,6 +6,7 @@ import linkedinDark from "../../public/linkedin-dark.svg";
 import Link from "next/link";
 import { Socials } from "../Socials";
 import { Courier_Prime } from 'next/font/google';
+import ThemeSwitch from "../ThemeSwitch";
 
 export const Navbar = () => {
   return (
@@ -52,6 +53,9 @@ export const Navbar = () => {
               logoAlt={"LinkedIn"}
               logoLink={"https://www.linkedin.com/in/zazhao/"}
             ></Socials>
+          </li>
+          <li className="inline-block ml-3">
+            <ThemeSwitch />
           </li>
         </ul>
       </div>
