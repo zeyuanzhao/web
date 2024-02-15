@@ -2,26 +2,30 @@ import ProjectPage from "../../../components/ProjectPage";
 import Image from "next/image";
 import WebsiteBanner from "../../../public/nextjs-banner.png";
 import Socials from "../../../components/Socials";
-import githubLogoLight from "../../../public/github-light.svg";
-import githubLogoDark from "../../../public/github-dark.svg";
 import webLogoDark from "../../../public/web-dark.svg";
 import webLogoLight from "../../../public/web-light.svg";
 import Link from "next/link";
 
 const Website = () => {
   return (
-    <ProjectPage title="Website" urltitle="website">
-      <div className="flex mb-4 justify-between">
-        <p className="prose prose-code:font-mono grow">
-          This website was built using <code>Next.js</code>, a{" "}
-          <code>React</code> framework that runs on <code>Node.Js</code>. I
-          started working on this project in January 2024 to learn{" "}
-          <code>React</code>
-          and practice my web development skills. I showcase my programming and
-          science projects on this website, along with some of my violin
-          recordings.
+    <ProjectPage title="Tuttio" urltitle="tuttio">
+      <div className="flex mb-4">
+        <p className="basis-2/3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+          lectus nulla at volutpat diam ut venenatis tellus in. Libero enim sed
+          faucibus turpis in eu mi. Sed egestas egestas fringilla phasellus
+          faucibus. Mauris cursus mattis molestie a. Imperdiet massa tincidunt
+          nunc pulvinar sapien et ligula. Nulla facilisi cras fermentum odio eu
+          feugiat pretium nibh. Velit dignissim sodales ut eu sem integer.
+          Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget.
+          Sagittis id consectetur purus ut faucibus. Orci sagittis eu volutpat
+          odio facilisis mauris sit amet. Sed risus ultricies tristique nulla
+          aliquet enim. Ac orci phasellus egestas tellus rutrum tellus
+          pellentesque eu. Ullamcorper a lacus vestibulum sed arcu non odio
+          euismod lacinia.
         </p>
-        <div className="basis-2/5">
+        <div className="ml-4 basis-1/3">
           <div className="rounded-lg shadow-lg overflow-hidden mb-4">
             <Image src={WebsiteBanner} alt={""} className="object-cover" />
           </div>
@@ -33,9 +37,7 @@ const Website = () => {
                 logoAlt={"GitHub Repository"}
                 logoLink={"https://github.com/zeyuanzhao/web"}
               />
-              <Link href={"https://github.com/zeyuanzhao/web"} target="_blank">
-                <p className="inline-block ml-2">Source Code</p>
-              </Link>
+              <Link href={"https://github.com/zeyuanzhao/web"}  target="_blank"><p className="inline-block ml-2">Source Code</p></Link>
             </div>
             <div className="inline-block mr-6">
               <Socials
@@ -47,9 +49,7 @@ const Website = () => {
                 height={50}
                 newTab={false}
               />
-              <Link href={"/"}>
-                <p className="inline-block ml-0.5">Visit Website</p>
-              </Link>
+              <Link href={"/"}><p className="inline-block ml-0.5">Visit Website</p></Link>
             </div>
           </div>
         </div>

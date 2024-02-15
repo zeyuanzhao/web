@@ -26,7 +26,7 @@ export const Socials = ({
   }
   return (
     // focus:ring-4 hover:ring-4 ring-slate-300 dark:ring-slate-600 
-    <div className="rounded-full m-auto">
+    <div className="rounded-full m-auto inline-block">
       <Link href={logoLink} target={t} className="">
         <Image src={logoLight} width={width} height={height} alt={logoAlt} className="inline-block dark:hidden scale-100 hover:scale-110 ease-in duration-250" />
         <Image src={logoDark} width={width} height={height} alt={logoAlt} className="hidden dark:inline-block scale-100 hover:scale-110 ease-in duration-250" />
