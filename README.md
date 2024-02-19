@@ -1,3 +1,9 @@
+# Alex Zhao's Website
+
+Welcome to the source code for my website!
+
+The development branch has the latest edits and the main branch is what is currently deployed.
+
 # Next.js Static Export
 
 Next.js enables starting as a static site or Single-Page Application (SPA), then later optionally upgrading to use features that require a server.
