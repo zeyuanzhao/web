@@ -45,6 +45,10 @@ const Website = () => {
           </div>
         </div>
         <article className="prose prose-code:font-mono">
+          <p className="font-bold">
+            This page is under construction. Please check back soon for more
+            information.
+          </p>
           <p>
             This website was built using <code>Next.js</code>, a{" "}
             <code>React</code> framework that runs on <code>Node.Js</code>. I
@@ -66,7 +70,7 @@ const Website = () => {
             that hasn't been published yet.
           </p>
           <p>
-            I registered the <code>azhao.dev</code> domain using Cloudflare 
+            I registered the <code>azhao.dev</code> domain using Cloudflare.
           </p>
         </article>
       </div>
