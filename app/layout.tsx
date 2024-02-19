@@ -18,7 +18,7 @@ const RootLayout = ({
         <title>Alex Zhao</title>
         {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
       </head>
-      <body>
+      <body className="dark:text-white">
         <Navbar />
         {children}
         <GoogleAnalytics gaId="G-WTW0D38B14" />

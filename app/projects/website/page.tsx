@@ -46,7 +46,7 @@ const Website = () => {
         </div>
         <article className="prose prose-code:font-mono">
           <p className="font-bold">
-            This page is under construction. Please check back soon for more
+            🚧 This page is under construction. 🚧 Please check back soon for more
             information.
           </p>
           <p>
