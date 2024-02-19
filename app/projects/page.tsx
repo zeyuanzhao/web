@@ -49,7 +49,7 @@ const Projects = () => {
           image={SquarespaceBanner}
           imageAlt={"Squarespace banner"}
           // imageWidth={400}
-          link={""}
+          link={"/projects/tuttio"}
           buttonText="Learn More"
         >
           <Socials

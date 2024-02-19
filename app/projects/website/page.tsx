@@ -1,18 +1,79 @@
 import ProjectPage from "../../../components/ProjectPage";
 import Image from "next/image";
-import WebsiteBanner from "../../../public/nextjs-banner.png"
+import WebsiteBanner from "../../../public/nextjs-banner.png";
+import Socials from "../../../components/Socials";
+import githubLogoLight from "../../../public/github-light.svg";
+import githubLogoDark from "../../../public/github-dark.svg";
+import webLogoDark from "../../../public/web-dark.svg";
+import webLogoLight from "../../../public/web-light.svg";
+import Link from "next/link";
 
 const Website = () => {
   return (
     <ProjectPage title="Website" urltitle="website">
-      <div className="flex mb-4">
-        <p className="basis-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat diam ut venenatis tellus in. Libero enim sed faucibus turpis in eu mi. Sed egestas egestas fringilla phasellus faucibus. Mauris cursus mattis molestie a. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Velit dignissim sodales ut eu sem integer. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Sagittis id consectetur purus ut faucibus. Orci sagittis eu volutpat odio facilisis mauris sit amet. Sed risus ultricies tristique nulla aliquet enim. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia.</p>
-        <div className="ml-4 basis-1/3 rounded-lg shadow-2xl overflow-hidden">
-          <Image src={WebsiteBanner} alt={""} className="object-cover" />
+      <div className="">
+        <div className="float-right w-1/3 ml-16 mb-2">
+          <div className="rounded-lg shadow-lg overflow-hidden mb-4">
+            <Image src={WebsiteBanner} alt={""} className="object-cover" />
+          </div>
+          <div className="ml-4 mb-4 flex place-items-center justify-between">
+            <div className="inline-block">
+              <Socials
+                logoLight={githubLogoLight}
+                logoDark={githubLogoDark}
+                logoAlt={"GitHub Repository"}
+                logoLink={"https://github.com/zeyuanzhao/web"}
+              />
+              <Link href={"https://github.com/zeyuanzhao/web"} target="_blank">
+                <p className="lg:inline-block ml-2 hidden">Source Code</p>
+              </Link>
+            </div>
+            <div className="inline-block mr-6">
+              <Socials
+                logoLight={webLogoLight}
+                logoDark={webLogoDark}
+                logoAlt={"Visit Website"}
+                logoLink={"/"}
+                width={50}
+                height={50}
+                newTab={false}
+              />
+              <Link href={"/"}>
+                <p className="lg:inline-block ml-0.5 hidden">Visit Website</p>
+              </Link>
+            </div>
+          </div>
         </div>
+        <article className="prose prose-code:font-mono">
+          <p className="font-bold">
+            This page is under construction. Please check back soon for more
+            information.
+          </p>
+          <p>
+            This website was built using <code>Next.js</code>, a{" "}
+            <code>React</code> framework that runs on <code>Node.Js</code>. I
+            started working on this project in January 2024 to learn{" "}
+            <code>React</code>
+            and practice my web development skills. I showcase my programming
+            and science projects on this website, along with some of my violin
+            recordings.
+          </p>
+          <p>
+            The website was developed on{" "}
+            <a href="https://idx.dev/" target="_blank">
+              Google IDX
+            </a>
+            , a web-based IDE that is based on Code OSS. The code for this
+            website is hosted on the GitHub repository linked to the right. The{" "}
+            <code>main</code> branch contains all the code that is currently
+            deployed. The <code>development</code> branch contains newer code
+            that hasn't been published yet.
+          </p>
+          <p>
+            I registered the <code>azhao.dev</code> domain using Cloudflare.
+          </p>
+        </article>
       </div>
-      <p>Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Augue eget arcu dictum varius duis at consectetur. Nulla facilisi morbi tempus iaculis urna. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Non tellus orci ac auctor augue mauris augue. Aliquet nec ullamcorper sit amet risus nullam. Varius quam quisque id diam. Massa sed elementum tempus egestas sed sed. Sit amet venenatis urna cursus eget nunc. Pulvinar etiam non quam lacus suspendisse faucibus. Integer vitae justo eget magna fermentum. Vitae auctor eu augue ut. Sed turpis tincidunt id aliquet risus feugiat. Eget nullam non nisi est sit. Est ante in nibh mauris cursus mattis molestie. Etiam tempor orci eu lobortis. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Dolor sit amet consectetur adipiscing.</p>
-      <p>Senectus et netus et malesuada fames ac turpis. Amet aliquam id diam maecenas ultricies mi eget. Odio tempor orci dapibus ultrices in iaculis nunc. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Porttitor eget dolor morbi non arcu risus quis varius. Dolor sit amet consectetur adipiscing elit. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Et malesuada fames ac turpis egestas sed tempus urna et. Ipsum dolor sit amet consectetur adipiscing elit. Pellentesque adipiscing commodo elit at imperdiet. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Aenean vel elit scelerisque mauris pellentesque. In tellus integer feugiat scelerisque varius morbi enim nunc.</p>
     </ProjectPage>
   );
 };
