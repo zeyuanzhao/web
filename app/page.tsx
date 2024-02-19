@@ -5,21 +5,21 @@ const Home = () => {
   return (
     <Main>
       <img src="" alt="" />
-      <div className="p-12 bg-sky-100 rounded-xl shadow-md">
+      <div className="p-12 bg-sky-100 dark:bg-slate-800 dark:text-white rounded-xl shadow-md">
         <h1 className="text-5xl mb-4">Hi, I'm Alex Zhao</h1>
         <h2 className="mb-3 text-xl">🎻 Violin and 💻 Programming</h2>
         <hr className="border-2 border-slate-600" />
         <p className="mt-8">
           I'm a sophomore at Montgomery Blair High School. Learn more about me{" "}
-          <Link href={"/about"} className="hover:underline text-blue-800">
+          <Link href={"/about"} className="hover:underline text-blue-800 dark:text-blue-300">
             here
           </Link>
           . Also view my{" "}
-          <Link href={"/projects"} className="hover:underline text-blue-800">
+          <Link href={"/projects"} className="hover:underline text-blue-800 dark:text-blue-300">
             programming projects
           </Link>{" "}
           and{" "}
-          <Link href={"/music"} className="hover:underline text-blue-800">
+          <Link href={"/music"} className="hover:underline text-blue-800 dark:text-blue-300">
             violin recordings
           </Link>
           .
@@ -28,7 +28,7 @@ const Home = () => {
           Check out how I built this website using Next.js on my{" "}
           <Link
             href={"/projects/website"}
-            className="hover:underline text-blue-800"
+            className="hover:underline text-blue-800 dark:text-blue-300"
           >
             projects page
           </Link>
@@ -39,7 +39,7 @@ const Home = () => {
           frequently. 🚧 Give me suggestions at{" "}
           <Link
             href="mailto:contact@azhao.dev"
-            className="hover:underline text-blue-800"
+            className="hover:underline text-blue-800 dark:text-blue-300"
           >
             contact@azhao.dev
           </Link>
