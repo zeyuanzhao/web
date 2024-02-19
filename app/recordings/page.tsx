@@ -18,7 +18,7 @@ const Recordings = () => {
         ></Video>
       </div>
       <p className="font-bold mt-4">
-        This page is under construction. I'll be adding more recordings later!
+        🚧 This page is under construction. 🚧 I'll be adding more recordings later!
       </p>
     </Main>
   );

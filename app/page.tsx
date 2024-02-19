@@ -7,7 +7,7 @@ const Home = () => {
       <img src="" alt="" />
       <div className="p-12 bg-sky-100 rounded-xl shadow-md">
         <h1 className="text-5xl mb-4">Hi, I'm Alex Zhao</h1>
-        <h2 className="mb-3 text-xl">Violin and Programming</h2>
+        <h2 className="mb-3 text-xl">🎻 Violin and 💻 Programming</h2>
         <hr className="border-2 border-slate-600" />
         <p className="mt-8">
           I'm a sophomore at Montgomery Blair High School. Learn more about me{" "}
@@ -35,8 +35,8 @@ const Home = () => {
           . This website is also <span className="underline">responsive</span>, so try viewing it on a mobile device!
         </p>
         <p className="mt-4">
-          This site is still under construction so it'll be updated very
-          frequently. Give me suggestions at{" "}
+          🚧 This site is still under construction so it'll be updated very
+          frequently. 🚧 Give me suggestions at{" "}
           <Link
             href="mailto:contact@azhao.dev"
             className="hover:underline text-blue-800"

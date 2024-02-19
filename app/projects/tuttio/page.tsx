@@ -39,7 +39,7 @@ const Website = () => {
             that hosts community concerts and provides free music tutoring.
           </p>
           <p className="font-bold">
-            This page is under construction. Please check back soon for more
+            🚧 This page is under construction. 🚧 Please check back soon for more
             information.
           </p>
         </article>
