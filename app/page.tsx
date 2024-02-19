@@ -32,7 +32,7 @@ const Home = () => {
           >
             projects page
           </Link>
-          .
+          . This website is also <span className="underline">responsive</span>, so try viewing it on a mobile device!
         </p>
         <p className="mt-4">
           This site is still under construction so it'll be updated very
