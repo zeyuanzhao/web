@@ -12,7 +12,7 @@ const About = () => {
           programming projects
         </Link>{" "}
         and{" "}
-        <Link href={"/music"} className="hover:underline text-blue-800 dark:text-blue-300">
+        <Link href={"/recordings"} className="hover:underline text-blue-800 dark:text-blue-300">
           violin recordings
         </Link>{" "}
         while you're waiting.
