@@ -1,6 +1,6 @@
 import ProjectPage from "../../../components/ProjectPage";
 import Image from "next/image";
-import WebsiteBanner from "../../../public/squarespace-banner.jpg";
+import TuttioBanner from "../../../public/tuttio-banner.png";
 import Socials from "../../../components/Socials";
 import webLogoDark from "../../../public/web-dark.svg";
 import webLogoLight from "../../../public/web-light.svg";
@@ -12,7 +12,7 @@ const Website = () => {
       <div className="">
         <div className="float-right w-1/3 ml-16 mb-2">
           <div className="rounded-lg shadow-lg overflow-hidden mb-4">
-            <Image src={WebsiteBanner} alt={""} className="object-cover" />
+            <Image src={TuttioBanner} alt={""} className="object-cover" />
           </div>
           <div className="ml-4 mb-4 flex place-items-center justify-between">
             <div className="inline-block mr-6">
@@ -36,7 +36,7 @@ const Website = () => {
         <article className="prose prose-code:font-mono">
           <p>
             I am the founder and president of Tuttio, a nonprofit organization
-            that hosts community concerts and provides free music tutoring.
+            that hosts community concerts and provides free music tutoring. We were founded in September 2023.
           </p>
           <p className="font-bold">
             🚧 This page is under construction. 🚧 Please check back soon for more

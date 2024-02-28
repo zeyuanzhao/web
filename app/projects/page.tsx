@@ -2,7 +2,8 @@ import React from "react";
 import Main from "../../components/Main";
 import { Project } from "../../components/Project";
 import WebsiteBanner from "../../public/nextjs-banner.png";
-import SquarespaceBanner from "../../public/squarespace-banner.jpg"
+import TuttioBanner from "../../public/tuttio-banner.png";
+import DiscordBanner from "../../public/discord-banner.png"
 import Image from "next/image";
 import Socials from "../../components/Socials";
 import githubLogoDark from "../../public/github-dark.svg";
@@ -46,7 +47,7 @@ const Projects = () => {
           description={
             "I am the founder and president of Tuttio, a nonprofit organization that hosts community concerts and provides free music tutoring. Learn more about Tuttio below!"
           }
-          image={SquarespaceBanner}
+          image={TuttioBanner}
           imageAlt={"Squarespace banner"}
           // imageWidth={400}
           link={"/projects/tuttio"}
@@ -60,6 +61,23 @@ const Projects = () => {
             width={50}
             height={50}
             newTab={false}
+          />
+        </Project>
+        <Project
+          name="Discord Bot"
+          description={
+            "Created a Discord chatbot for Hypixel Skyblock that lets users access game data in a simple format."
+          }
+          image={DiscordBanner}
+          imageAlt={"Discord Logo"}
+          link={"/projects/discordbot"}
+          buttonText="Learn More"
+        >
+          <Socials
+            logoLight={githubLogoLight}
+            logoDark={githubLogoDark}
+            logoAlt={"GitHub Repository"}
+            logoLink={"https://github.com/zeyuanzhao/hubportal"}
           />
         </Project>
       </div>
