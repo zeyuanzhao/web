@@ -4,6 +4,7 @@ import { Project } from "../../components/Project";
 import WebsiteBanner from "../../public/nextjs-banner.png";
 import TuttioBanner from "../../public/tuttio-banner.png";
 import DiscordBanner from "../../public/discord-banner.png"
+import DjangoBanner from "../../public/django-banner.jpeg"
 import Image from "next/image";
 import Socials from "../../components/Socials";
 import githubLogoDark from "../../public/github-dark.svg";
@@ -78,6 +79,23 @@ const Projects = () => {
             logoDark={githubLogoDark}
             logoAlt={"GitHub Repository"}
             logoLink={"https://github.com/zeyuanzhao/hubportal"}
+          />
+        </Project>
+        <Project
+          name="Auctions Site"
+          description={
+            "A Django website where users can log in to list and bid in auctions."
+          }
+          image={DjangoBanner}
+          imageAlt={"Django Logo"}
+          link={"/projects/auctions"}
+          buttonText="Learn More"
+        >
+          <Socials
+            logoLight={githubLogoLight}
+            logoDark={githubLogoDark}
+            logoAlt={"GitHub Repository"}
+            logoLink={"https://github.com/zeyuanzhao/auctions-site"}
           />
         </Project>
       </div>
