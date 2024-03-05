@@ -14,7 +14,7 @@ const Website = () => {
       <div className="">
         <div className="float-right w-1/3 ml-16 mb-2">
           <div className="rounded-lg shadow-lg overflow-hidden mb-4">
-            <Image src={WebsiteBanner} alt={""} className="object-cover" />
+            <Image src={WebsiteBanner} alt={"Next.js Logo"} className="object-cover" />
           </div>
           <div className="ml-4 mb-4 flex place-items-center justify-between">
             <div className="inline-block hover:">

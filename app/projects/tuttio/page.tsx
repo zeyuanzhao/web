@@ -12,7 +12,7 @@ const Website = () => {
       <div className="">
         <div className="float-right w-1/3 ml-16 mb-2">
           <div className="rounded-lg shadow-lg overflow-hidden mb-4">
-            <Image src={TuttioBanner} alt={""} className="object-cover" />
+            <Image src={TuttioBanner} alt={"Tuttio Logo"} className="object-cover" />
           </div>
           <div className="ml-4 mb-4 flex place-items-center justify-between">
             <div className="inline-block mr-6">

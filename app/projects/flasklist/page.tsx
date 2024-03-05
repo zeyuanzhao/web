@@ -4,15 +4,16 @@ import DiscordBanner from "../../../public/discord-banner.png";
 import Socials from "../../../components/Socials";
 import githubLogoLight from "../../../public/github-light.svg";
 import githubLogoDark from "../../../public/github-dark.svg";
+import FlaskBanner from "../../../public/flask-banner.png";
 import Link from "next/link";
 
 const Website = () => {
   return (
-    <ProjectPage title="Discord" urltitle="discord">
+    <ProjectPage title="Flasklist" urltitle="flasklist">
       <div className="">
         <div className="float-right w-1/3 ml-16 mb-2">
-          <div className="rounded-lg shadow-lg overflow-hidden mb-4">
-            <Image src={DiscordBanner} alt={"Discord Logo"} className="object-cover" />
+          <div className="rounded-lg shadow-lg overflow-hidden mb-4 dark:bg-slate-400">
+            <Image src={FlaskBanner} alt={"Flask Logo"} className="object-cover" />
           </div>
           <div className="ml-4 mb-4 flex place-items-center justify-between">
             <div className="inline-block hover:">
@@ -20,9 +21,9 @@ const Website = () => {
                 logoLight={githubLogoLight}
                 logoDark={githubLogoDark}
                 logoAlt={"GitHub Repository"}
-                logoLink={"https://github.com/zeyuanzhao/hubportal"}
+                logoLink={"https://github.com/zeyuanzhao/cs50x/tree/main/final-project"}
               />
-              <Link href={"https://github.com/zeyuanzhao/hubportal"} target="_blank">
+              <Link href={"https://github.com/zeyuanzhao/cs50x/tree/main/final-project"} target="_blank">
                 <p className="lg:inline-block ml-2 hidden">Source Code</p>
               </Link>
             </div>
@@ -32,13 +33,10 @@ const Website = () => {
               Python
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              Discord.py
+              Flask
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              JSON API
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              Discord API
+              SQLite
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
               Git
@@ -47,16 +45,13 @@ const Website = () => {
               GitHub
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              pip
+              Authentication
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              Heroku
+              HTTP
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              MongoDB
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              .env
+              API
             </span>
           </div>
         </div>
