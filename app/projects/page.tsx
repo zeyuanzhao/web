@@ -5,6 +5,7 @@ import WebsiteBanner from "../../public/nextjs-banner.png";
 import TuttioBanner from "../../public/tuttio-banner.png";
 import DiscordBanner from "../../public/discord-banner.png"
 import DjangoBanner from "../../public/django-banner.jpeg"
+import FlaskBanner from "../../public/flask-banner.png";
 import Image from "next/image";
 import Socials from "../../components/Socials";
 import githubLogoDark from "../../public/github-dark.svg";
@@ -96,6 +97,40 @@ const Projects = () => {
             logoDark={githubLogoDark}
             logoAlt={"GitHub Repository"}
             logoLink={"https://github.com/zeyuanzhao/auctions-site"}
+          />
+        </Project>
+        <Project
+          name="Flasklist"
+          description={
+            "A flask site where users can log in to create to-do lists"
+          }
+          image={FlaskBanner}
+          imageAlt={"Flask Logo"}
+          link={"/projects/flasklist"}
+          buttonText="Learn More"
+        >
+          <Socials
+            logoLight={githubLogoLight}
+            logoDark={githubLogoDark}
+            logoAlt={"GitHub Repository"}
+            logoLink={"https://github.com/zeyuanzhao/cs50x/tree/main/final-project"}
+          />
+        </Project>
+        <Project
+          name="Wiki Site"
+          description={
+            "A wikipedia clone built using Django. Users can create, read, search, and modify posts."
+          }
+          image={DjangoBanner}
+          imageAlt={"Django Logo"}
+          link={"/projects/wiki"}
+          buttonText="Learn More"
+        >
+          <Socials
+            logoLight={githubLogoLight}
+            logoDark={githubLogoDark}
+            logoAlt={"GitHub Repository"}
+            logoLink={"https://github.com/zeyuanzhao/wiki-site"}
           />
         </Project>
       </div>
